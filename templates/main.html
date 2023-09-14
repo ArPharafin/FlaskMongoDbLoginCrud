@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Main Page</title>
+    <link rel="stylesheet" href="/static/css/normalize.css">
+  <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+
+<p title="About Main.html"><span style="font-size: 24px;"><b>Main Page</b></span></p>
+
+
+    <button type="button" id="createButton" style="margin-left: 80px; margin-top: 10px;"><b>Create</b></button>
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const createButton = document.getElementById("createButton");
+            if (createButton) {
+                createButton.addEventListener("click", function() {
+                    window.location.href = "/create";
+                });
+            }
+        });
+    </script>
+
+<button type="button" id ="deleteButton" style="margin-left: 80px; margin-top: 10px;"><b>Delete</b></button>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+            const deleteButton = document.getElementById("deleteButton");
+            if (deleteButton) {
+                deleteButton.addEventListener("click", function() {
+                    window.location.href = "/delete";
+                });
+            }
+});
+    </script>
+
+<br><button type="button" id ="updateButton" style="margin-left: 80px; margin-top: 30px;"><b>Update</b></button>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+            const updateButton = document.getElementById("updateButton");
+            if (updateButton) {
+                updateButton.addEventListener("click", function() {
+                    window.location.href = "/update";
+                });
+            }
+});
+    </script>
+<button type="button" id="listButton" style="margin-left: 80px; margin-top: 30px;"><b>List</b></button>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+            const listButton = document.getElementById("listButton");
+            if (listButton) {
+                listButton.addEventListener("click", function() {
+                    window.location.href = "/list";
+                });
+            }
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Oluşturma</title>
+    <link rel="stylesheet" href="/static/css/normalize.css">
+  <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+
+<body>
+    <h1>Kayıt Oluştur</h1>
+    <form method="POST" action="/create">
+        <label for="ad">Ad:</label>
+        <input type="text" id="ad" name="ad" required><br><br>
+
+        <label for="soyad">Soyad:</label>
+        <input type="text" id="soyad" name="soyad" required><br><br>
+
+        <label for="tckn">TCKN:</label>
+        <input type="text" id="tckn" name="tckn" required ><br><br>
+
+        <label for="sehir">Şehir:</label>
+        <input type="text" id="sehir" name="sehir" required><br><br>
+
+        <label for="ugurlusayi">Başarı Sayısı:</label>
+        <input type="number" id="ugurlusayi" name="ugurlusayi" required><br><br>
+
+        <input type="submit" value="Kayıt Oluştur">
+    </form>
+</body>
+</html>

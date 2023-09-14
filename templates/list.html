@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List Data</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #ddd;
+            text-align: center;
+        }
+
+        td {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Ad</th>
+            <th>Soyad</th>
+            <th>TCKN</th>
+            <th>Şehir</th>
+            <th>Uğurlu Sayı</th>
+        </tr>
+
+        {% for document in documents %}
+        <tr>
+            <td>{{ document["_id"] }}</td>
+            <td>{{ document["ad"] }}</td>
+            <td>{{ document["soyad"] }}</td>
+            <td>{{ document["tckn"] }}</td>
+            <td>{{ document["sehir"] }}</td>
+            <td>{{ document["ugurlusayi"] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
